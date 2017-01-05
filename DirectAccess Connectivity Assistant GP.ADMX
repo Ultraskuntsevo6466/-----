@@ -1,0 +1,77 @@
+<policyDefinitions revision="1.0" schemaVersion="1.0">
+  <policyNamespaces>
+    <target prefix="DirectAccessConnectivityAssistant" namespace="Microsoft.Policies.DirectAccessConnectivityAssistant" />
+    <using prefix="windows" namespace="Microsoft.Policies.Windows" />
+  </policyNamespaces>
+  <resources minRequiredRevision="1.0" />
+  <supportedOn>
+
+  </supportedOn>
+  <categories>
+    <category name="DirectAccessConnectivityAssistant" displayName="$(string.unknown_0)" explainText="$(string.DirectAccessConnectivityAssistant_Help)" />
+  </categories>
+  <policies>
+    <policy name="POL_367820E4_A357_4668_A694_361FA548EEED" class="Machine" displayName="$(string.POL_367820E4_A357_4668_A694_361FA548EEED)" explainText="$(string.POL_367820E4_A357_4668_A694_361FA548EEED_Help)" presentation="$(presentation.POL_367820E4_A357_4668_A694_361FA548EEED)" key="SOFTWARE\Policies\Microsoft\DirectAccessConnectivityAssistant">
+      <parentCategory ref="DirectAccessConnectivityAssistant" />
+      <supportedOn ref="windows:SUPPORTED_Windows7" />
+      
+      <elements>
+        <text id="TXT_F5224AF1_4B88_4286_B071_D82FB177FFE9" key="SOFTWARE\Policies\Microsoft\DirectAccessConnectivityAssistant" valueName="SupportEmail" required="true" maxLength="50" />
+      </elements>
+    </policy>
+    <policy name="POL_745C421E_7E53_42B9_9E12_902CB121BA0F" class="Machine" displayName="$(string.POL_745C421E_7E53_42B9_9E12_902CB121BA0F)" presentation="$(presentation.POL_745C421E_7E53_42B9_9E12_902CB121BA0F)" 
+	explainText="$(string.POL_745C421E_7E53_42B9_9E12_902CB121BA0F_Help)" 
+	key="SOFTWARE\Policies\Microsoft\DirectAccessConnectivityAssistant" valueName="NamePreferenceAllowed">
+      <parentCategory ref="DirectAccessConnectivityAssistant" />
+      <supportedOn ref="windows:SUPPORTED_Windows7" />
+<enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="POL_85B41818_2EA0_4DF9_8C54_E67DE2760E7E" class="Machine" displayName="$(string.POL_85B41818_2EA0_4DF9_8C54_E67DE2760E7E)" presentation="$(presentation.POL_85B41818_2EA0_4DF9_8C54_E67DE2760E7E)" 
+	
+	explainText="$(string.POL_FD07A7C7_1151_40BE_9CFA_516378634F1D_Help)" 
+	key="SOFTWARE\Policies\Microsoft\DirectAccessConnectivityAssistant">
+      <parentCategory ref="DirectAccessConnectivityAssistant" />
+      <supportedOn ref="windows:SUPPORTED_Windows7" />
+ 
+      <elements>
+        <list id="LST_6A8ABCF4_A088_4833_B9B2_24EB5BCF193F" key="SOFTWARE\Policies\Microsoft\DirectAccessConnectivityAssistant\Probes" valueName="Probe" additive="true" />
+      </elements>
+    </policy>
+    <policy name="POL_2D7E5CD0_8D09_419D_BFF9_71B40CB0C458" class="Machine" displayName="$(string.POL_2D7E5CD0_8D09_419D_BFF9_71B40CB0C458)" explainText="$(string.POL_2D7E5CD0_8D09_419D_BFF9_71B40CB0C458_Help)" presentation="$(presentation.POL_2D7E5CD0_8D09_419D_BFF9_71B40CB0C458)" key="SOFTWARE\Policies\Microsoft\DirectAccessConnectivityAssistant" >
+      <parentCategory ref="DirectAccessConnectivityAssistant" />
+      <supportedOn ref="windows:SUPPORTED_Windows7" />
+      
+      <elements>
+        <text id="TXT_3B359B2E_D42E_4145_8EAC_8B47EFFEFBB4" key="SOFTWARE\Policies\Microsoft\DirectAccessConnectivityAssistant" valueName="PortalName" required="true" maxLength="35" />
+      </elements>
+    </policy>
+    <policy name="POL_6ED2AC51_1382_4034_9BFF_EC996AE74ACD" class="Machine" displayName="$(string.POL_6ED2AC51_1382_4034_9BFF_EC996AE74ACD)" explainText="$(string.POL_6ED2AC51_1382_4034_9BFF_EC996AE74ACD_Help)" presentation="$(presentation.POL_6ED2AC51_1382_4034_9BFF_EC996AE74ACD)" key="SOFTWARE\Policies\Microsoft\DirectAccessConnectivityAssistant\DTEs">
+      <parentCategory ref="DirectAccessConnectivityAssistant" />
+      <supportedOn ref="windows:SUPPORTED_Windows7" />
+
+      <elements>
+        <list id="LST_3FC38B05_1F32_4155_B3CC_3A8ECE50F77A" key="SOFTWARE\Policies\Microsoft\DirectAccessConnectivityAssistant\DTEs" valueName="DTE" additive="true" />
+      </elements>
+    </policy>
+        <policy name="POL_6BA80102_0617_4414_A8D2_449AEFE21284" class="Machine" displayName="$(string.POL_6BA80102_0617_4414_A8D2_449AEFE21284)" explainText="$(string.POL_6BA80102_0617_4414_A8D2_449AEFE21284_Help)" presentation="$(presentation.POL_6BA80102_0617_4414_A8D2_449AEFE21284)" key="SOFTWARE\Policies\Microsoft\DirectAccessConnectivityAssistant" >
+      <parentCategory ref="DirectAccessConnectivityAssistant" />
+      <supportedOn ref="windows:SUPPORTED_Windows7" />
+  
+      <elements>
+        <text id="TXT_320E6558_7D68_436D_AA62_9578565C0C3A" key="SOFTWARE\Policies\Microsoft\DirectAccessConnectivityAssistant" valueName="TroubleshootPortal" required="true" />
+      </elements>
+    </policy>
+    <policy name="POL_FD07A7C7_1151_40BE_9CFA_516378634F1D" class="Machine" displayName="$(string.POL_FD07A7C7_1151_40BE_9CFA_516378634F1D)" explainText="$(string.POL_6BA80102_0617_4414_A8D2_449AEFE21283_Help)" presentation="$(presentation.POL_FD07A7C7_1151_40BE_9CFA_516378634F1D)" key="SOFTWARE\Policies\Microsoft\DirectAccessConnectivityAssistant">
+      <parentCategory ref="DirectAccessConnectivityAssistant" />
+      <supportedOn ref="windows:SUPPORTED_Windows7" />
+      <elements>
+        <text id="TXT_2DE0294A_3B5A_4EFA_85F9_4359F1F7C00B" key="SOFTWARE\Policies\Microsoft\DirectAccessConnectivityAssistant" valueName="AdminScript" />
+      </elements>
+    </policy>
+  </policies>
+</policyDefinitions>
